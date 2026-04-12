@@ -1,0 +1,172 @@
+
+.Logo {
+    position: absolute;    
+    top: 20px;             
+    left: 80px;             
+    width: 300px;           
+    height: auto;
+    z-index: 200;           
+    transition: transform 0.3s ease; 
+}
+
+.Logo:hover {
+    transform: scale(2.2);  
+}
+.seccion-unete {
+    padding: 100px 20px 60px; 
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-unete {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.encabezado-unete {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.encabezado-unete h1 {
+    color: #005a75; 
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.decoracion-verde {
+    width: 50px;
+    height: 4px;
+    background-color: #a2f2bb; 
+    margin: 10px auto;
+}
+
+.encabezado-unete p {
+    color: #777;
+    font-size: 18px;
+}
+
+
+.grid-unete {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+.columna-info {
+    flex: 1;
+}
+
+.columna-info h2 {
+    color: #005a75;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.columna-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-beneficios li {
+    margin-bottom: 12px;
+    color: #005a75;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-beneficios span {
+    color: #a2f2bb;
+    font-size: 20px;
+}
+
+
+.columna-formulario {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.grupo-input {
+    margin-bottom: 15px;
+}
+
+.grupo-input input, 
+.grupo-input textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    outline: none;
+}
+
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+    border-color: #00bcd4;
+}
+
+.boton-unete {
+    background-color: #005a75;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-unete:hover {
+    background-color: #00bcd4;
+}
+.input-estilo, 
+.grupo-input select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"24"%20height%3D"24"%20viewBox%3D"0%200%2024%2024"><path%20fill%3D"%23005a75"%20d%3D"M7%2010l5%205%205-5z"%2F><%2Fsvg>'); /* Añade una flecha personalizada color azul */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+}
+
+.input-estilo:focus {
+    border-color: #00bcd4;
+}
+
+
+@media (max-width: 768px) {
+    .grid-unete {
+        flex-direction: column; 
+        gap: 30px;
+    }
+    
+    .encabezado-unete h1 {
+        font-size: 32px;
+    }
+}

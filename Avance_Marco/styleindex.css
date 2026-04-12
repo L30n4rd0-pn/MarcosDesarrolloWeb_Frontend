@@ -1,0 +1,140 @@
+
+.nav-principal{
+    background-color:#2D4F32;
+}
+.Cabeza {
+    display: flex;
+    align-items: center;   
+    justify-content: flex-end; 
+    padding: 20px 50px;     
+    gap: 20px;             
+    background-color: transparent; 
+}
+
+.contenido-unete {
+    padding: 60px 20px; 
+    margin: 0 auto;    
+    text-align: center;
+    
+}
+.Logo {
+    position: absolute;    
+    top: 20px;             
+    left: 80px;             
+    width: 300px;           
+    height: auto;
+    z-index: 200;           
+    transition: transform 0.3s ease; 
+}
+
+.Logo:hover {
+    transform: scale(2.2);  
+}
+
+.Cabeza a {
+    text-decoration: none;
+    color: white;        
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.Cabeza a:hover {
+    color: #2D4F32;        
+}
+.seccion-inscripcion { position: relative; font-family: sans-serif; }
+
+.banner-superior-verde {
+    background-color: #F9FBF9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner-superior-verde h2 {
+    color: black;
+    font-size: 40px;
+    line-height: 0.9;
+}
+
+.banner-superior-verde h2 span {
+    background-color: #2D4F32;
+    color: white;
+    padding: 5px 15px;
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+.franja-inferior-azul {
+    background-color: #699E64;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-sticker-verde {
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-self: center;
+}
+
+
+.seccion-aliados {
+    background-color: #F9FBF9; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo-aliados {
+    color: #2D4F32;
+    font-size: 50px;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.titulo-aliados span {
+    display: block;
+    color: #79f295; 
+    font-size: 50px;
+    text-shadow: 2px 2px #2c4e5e; 
+}
+
+.grid-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.circulo-logo {
+    background: white;
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+
+.circulo-logo img {
+    max-width: 80%; 
+    max-height: 80%; 
+    width: auto;     
+    height: auto;    
+    object-fit: contain; 
+}

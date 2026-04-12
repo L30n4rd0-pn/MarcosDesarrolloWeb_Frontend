@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleFormu.css">
+</head>
+<body>
+    <div class="nav-principal">
+        <a href="index.html">
+            <img src="Imagenes/logo.png" alt="Logo" class="Logo">
+        </a>
+    <main class="seccion-unete">
+        <div class="contenedor-unete">
+            <div class="encabezado-unete">
+                <h1>Únete</h1>
+                <div class="decoracion-verde"></div>
+                <p>Sé parte de la red de reciclaje más grande del país.</p>
+            </div>
+    
+            <div class="grid-unete">
+                
+                <div class="columna-info">
+                    <h2>¿Quieres que tu empresa sea parte de Recicla Consciente?</h2>
+                    <p>Déjanos tus datos y nos pondremos en contacto contigo para contarte cómo puedes sumarte a esta iniciativa de economía circular.</p>
+                    
+                    <ul class="lista-beneficios">
+                        <li><span>✔</span> Visibilidad para tu marca</li>
+                        <li><span>✔</span> Gestión responsable de residuos</li>
+                        <li><span>✔</span> Impacto social y ambiental real</li>
+                    </ul>
+                </div>
+    
+                <div class="columna-formulario">
+                    <form id="form-unete">
+                        <div class="grupo-input">
+                            <input type="text" placeholder="Nombre y Apellido" required>
+                        </div>
+                        <div class="grupo-input">
+                            <input type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="grupo-input">
+                            <input type="tel" placeholder="Numero de Telefono" required>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="razon-social" style="display:block; margin-bottom:5px; color:#005a75; font-weight:bold;">Razón Social</label>
+                            <select id="razon-social" name="razon_social" class="input-estilo" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="persona_natural">Recogo en Comunidades</option>
+                                <option value="persona_natural">Servicio de Limpieza Local</option>
+                                <option value="persona_natural">Limpieza de Playas</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="boton-unete">Enviar</button>
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </main>
+</body>
+</html>
