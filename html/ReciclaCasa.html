@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recicla en casa</title>
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark nav-sup">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.png" alt="Logo" height="75" />
+        </a>
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">      
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos reciclables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estaciones de reciclaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="#">Recicla en casa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Socios y aliados</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Prensa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Unete</a></li>
+          </ul>
+        </section>
+      </div>
+    </header>
+
+    <main class="container py-5 text-center">
+      <nav class="mb-5">
+        <div class="bloque-negro">RECICLA</div>
+        <br />
+        <div class="bloque-negro grande">EN CASA</div>
+        <p class="mt-3 texto-guia">
+          Haz click en cada habitación y aprende cómo reciclar.
+        </p>
+      </nav>
+
+      <section class="casa-total mx-auto">
+        <div class="techo"></div>
+        <nav class="cuarto-grid">
+          <div class="celda" onclick="abrirPopUp(0)">
+            <img src="/img/baño.webp" alt="Baño" />
+            <div class="capa"><h3>Baño</h3></div>
+          </div>
+          <nav class="celda" onclick="abrirPopUp(1)">
+            <img src="/img/cuarto.webp" alt="Cuarto" />
+            <div class="capa"><h3>Dormitorio</h3></div>
+          </nav>
+          <nav class="celda" onclick="abrirPopUp(2)">
+            <img src="/img/cocina.avif" alt="Cocina" />
+            <div class="capa"><h3>Cocina</h3></div>
+          </nav>
+          <nav class="celda" onclick="abrirPopUp(3)">
+            <img src="/img/lavanderia.jpg" alt="Lavanderia" />
+            <div class="capa"><h3>Lavanderia</h3></div>
+          </nav>
+        </nav>
+      </section>
+
+      <section id="overlay" class="overlay-centrado">
+        <nav class="cuadrante-info">
+          <button class="cerrar-x" onclick="cerrarPopUp()">&times;</button>
+          <button class="flecha-nav ant" onclick="navegar(-1)">&#10094;</button>
+          <button class="flecha-nav sig" onclick="navegar(1)">&#10095;</button>
+          <div id="contenido-dinamico"></div>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="pie-verde">
+    <section class="container">
+        <nav class="row align-items-center">
+            
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="/img/logo.png" alt="Logo Recicla" class="logo-footer mb-3">
+                <nav class="iconos-sociales">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </div>
+
+            <nav class="col-md-4 mb-4 mb-md-0">
+                <ul class="lista-enlaces">
+                    <li><a href="#"><span>&#10142;</span> Facebook Twitter Youtube</a></li>
+                    <li><a href="#"><span>&#10142;</span> Productos reciclables</a></li>
+                    <li><a href="#"><span>&#10142;</span> Estaciones de reciclaje</a></li>
+                    <li><a href="#"><span>&#10142;</span> Recicla en casa</a></li>
+                    <li><a href="#"><span>&#10142;</span> Socios y aliados</a></li>
+                    <li><a href="#"><span>&#10142;</span> Únete</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-md-4">
+                <ul class="lista-enlaces">
+                    <li><a href="#"><span>&#10142;</span> ¿Qué tan expert@ del reciclaje eres?</a></li>
+                    <li><a href="#"><span>&#10142;</span> Recursos educativos</a></li>
+                    <li><a href="#"><span>&#10142;</span> Prensa</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </section>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoRecycle - Iniciar Sesión</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Iniciar Sesión - EcoSeguro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <main class="login-container">
-        <div class="top-logo">
-            <img src="/img/logo.png" alt="Recíclate Consciente">
+
+<section class="container d-flex justify-content-center">
+    <div class="login-card row g-0">
+        <div class="col-md-6 left-panel d-none d-md-flex">
+            <img src="/img/image 209.png" alt="Eco Lock">
         </div>
 
-        <section class="form-side">
-            <div class="login-card">
-                <h2>Iniciar Sesión</h2>
-
-                <form>
-                    <div class="input-group">
-                        <label>Correo Electrónico</label>
-                        <div class="input-wrapper">
-                            <i class='bx bx-envelope'></i>
-                            <input type="email" placeholder="Correo Electrónico">
-                        </div>
+        <div class="col-md-6 form-panel">
+            <h2 class="text-center mb-4" style="color: var(--dark-green);">Iniciar Sesión</h2>
+            
+            <form>
+                <div class="mb-4">
+                    <label class="form-label small fw-bold">Correo Electrónico</label>
+                    <div class="custom-input-group">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" placeholder="Correo Electrónico">
                     </div>
-
-                    <div class="input-group">
-                        <label>Contraseña</label>
-                        <div class="input-wrapper">
-                            <i class='bx bx-lock-alt'></i>
-                            <input type="password" placeholder="Contraseña">
-                            <i class='bx bx-show eye-icon'></i>
-                        </div>
-                        <a href="#" class="forgot-link">Olvidaste tu Contraseña</a>
-                    </div>
-
-                    <button type="submit" class="btn-ingresar">Ingresar</button>
-                </form>
-
-                <div class="divider">
-                    <span>O continúa con</span>
                 </div>
 
-                <div class="social-login">
-                    <button class="social-btn"><i class="bi bi-google"></i></button>
-                    <button class="social-btn"><i class="bi bi-facebook"></i></button>
+                <div class="mb-1">
+                    <label class="form-label small fw-bold">Contraseña</label>
+                    <div class="custom-input-group">
+                        <i class="bi bi-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                        <i class="bi bi-eye ms-auto" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+                
+                <div class="text-end mb-4">
+                    <a href="#" class="text-muted small text-decoration-none">Olvidaste tu Contraseña</a>
                 </div>
 
-                <p class="register-text">¿No tienes cuenta? <a href="#">Regístrate</a></p>
-            </div>
-        </section>
+                <button type="submit" class="btn btn-ingresar mb-4">Ingresar</button>
 
-    </main>
+                <div class="text-center position-relative mb-4">
+                    <hr>
+                    <span class="bg-white px-2 small text-muted" style="position: relative; top: -25px;">O continúa con</span>
+                </div>
+
+                <div class="text-center mb-4">
+                    <a href="#" class="btn border shadow-sm mx-1"><i class="bi bi-google text-danger"></i></a>
+                    <a href="#" class="btn border shadow-sm mx-1"><i class="bi bi-facebook text-primary"></i></a>
+                </div>
+
+                <div class="text-center small">
+                    ¿No tienes cuenta? <a href="#" class="text-success fw-bold text-decoration-none">Regístrate</a>
+                </div>
+            </form>
+        </div> 
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
