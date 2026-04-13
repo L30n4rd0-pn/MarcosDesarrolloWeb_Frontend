@@ -1,7 +1,12 @@
+/* Login (CSS)*/
+
 :root {
     --dark-green: #2d4a31;
     --mid-green: #7da07d;
     --light-green: #d1e2d1;
+    --v-oscuro:#2D4F32;
+    --v-claro:#4fe7df;
+    --f-verde:#e1ede2;
 }
 
  body {
@@ -76,4 +81,276 @@
     padding: 12px;
     font-weight: bold;
     width: 100%;
+}
+
+/* Recicla en Casa (CSS) */
+
+.nav-sup {
+  background-color: var(--v-oscuro) !important;
+}
+
+.activo {
+  color: var(--v-claro) !important;
+  font-weight: bold;
+}
+
+.rc-bloque-negro {
+  background: #333;
+  color: white;
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.rc-bloque-negro.grande {
+  font-size: 3rem;
+  margin-top: 5px;
+}
+.rc-texto-guia {
+  max-width: 500px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+}
+
+.rc-casa-total {
+  max-width: 750px;
+  position: relative;
+}
+
+.rc-techo {
+  background-color: brown;
+  height: 110px;
+  width: 110%;
+  margin: 0 auto;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  transform: translateX(-35px);
+}
+
+.rc-cuarto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: wheat; 
+  padding: 10px;
+  gap: 10px;
+}
+
+.rc-celda {
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.rc-celda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.rc-celda:hover img {
+  transform: scale(1.1);
+}
+
+.rc-capa {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.rc-celda:hover .capa {
+  background: rgba(0, 0, 0, 0);
+}
+
+.rc-capa h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.rc-overlay-centrado {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.rc-cuadrante-info {
+  background: white;
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  border-radius: 8px;
+  overflow: visible;
+  animation: aparecer 0.3s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.rc-titulo-pop {
+  background: #3e3a35;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.rc-img-pop {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.rc-cerrar-x {
+  border-radius: 100px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.rc-flecha-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rc-flecha-nav:hover {
+  color: #00b1a9;
+}
+.ant {
+  left: -70px;
+}
+.sig {
+  right: -70px;
+}
+
+.rc-cuerpo-pop {
+  padding: 10px 20px 30px;
+}
+
+@media (max-width: 768px) {
+  .rc-flecha-nav {
+    position: static;
+    transform: none;
+    color: #333;
+    margin: 0 20px;
+  }
+  .ant,
+  .sig {
+    display: inline-block;
+  }
+  .rc-cuadrante-info {
+    max-width: 95%;
+  }
+}
+
+.rc-pie-pagina {
+    background-color: #2d4a36;
+    padding: 60px 0;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.rc-logo-footer {
+    max-width: 220px;
+    height: auto;
+}
+
+.rc-iconos-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.rc-iconos-sociales a {
+    background: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.rc-iconos-sociales a:hover {
+    background: #e1ede2;
+    transform: translateY(-3px);
+}
+
+.rc-lista-enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rc-lista-enlaces li {
+    margin-bottom: 15px;
+}
+
+.rc-lista-enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.rc-lista-enlaces a span {
+    font-size: 1.2rem;
+}
+
+.rc-lista-enlaces a:hover {
+    color: #00b1a9;
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .rc-lista-enlaces a {
+        justify-content: center;
+    }
 }
